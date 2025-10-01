@@ -2,6 +2,9 @@ package com.simple.test;
 
 import com.simple.account.BankAccount;
 //import com.simple.account.PrivateAccount;
+import com.simple.account.BusinessAccount;
+
+import javax.swing.plaf.basic.BasicButtonUI;
 
 public class BankAccountTester {
     public static void main(String [] args){
@@ -53,5 +56,8 @@ public class BankAccountTester {
         System.out.println(steve.getUsername());
         System.out.println(steve instanceof BasicClass);
 
+        BusinessAccount account4 = new BusinessAccount(4, "ADP", 1000000f, "ADP1245");
+        System.out.println(account4.getBalance());
+        System.out.println(account4.toString());
     }
 }
